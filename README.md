@@ -12,3 +12,4 @@ A web-based Sudoku game with daily puzzles, difficulty levels, and leaderboards.
 ## Development
 
 See [`web/README.md`](web/README.md) for frontend setup.
+
