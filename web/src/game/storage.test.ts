@@ -9,7 +9,7 @@ import type { GameState } from './types'
 // useStorage builds its callbacks with useCallback and pulls the API client
 // from useApiClient. We don't render it in a component, so stub useCallback to
 // a passthrough and inject a mock api in place of useApiClient.
-const mockApi = vi.fn()
+const mockApi = vi.hoisted(() => vi.fn())
 
 vi.mock('react', async (importOriginal) => {
   const actual = await importOriginal<typeof import('react')>()
